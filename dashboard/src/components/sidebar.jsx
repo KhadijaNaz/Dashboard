@@ -3,8 +3,11 @@ import {useState} from 'react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
 import { FaTh, FaBars } from "react-icons/fa";
-
 import { IoMdInformationCircleOutline } from "react-icons/io";
+import CIcon from '@coreui/icons-react'
+import {
+  cilPuzzle
+} from '@coreui/icons'
 
 const Sidebar = ({children}) => {
     const[isOpen,setIsOpen] = useState(false);
@@ -17,8 +20,31 @@ const Sidebar = ({children}) => {
          icon: <FaTh/>
         },
         {
+            path:"/categories",
+            name:"Categories",
+            subRoutes: [
+        {
+            path:"/categories/passwords",
+            name:"Passwords",  
+        },
+       {
+        path:"/categories/personalinfo",
+        name:"Personal Info",
+       },
+       {
+        path:"/categories/securenotes",
+        name:"Secure Notes",
+       },
+       {
+        path:"/categories/creditcard",
+        name:"Credit Card",
+       },
+            ],
+        },
+        {
             path: "/folders",
             name: "Folders",
+
            },
         {
          path: "/passwords",

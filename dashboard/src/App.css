@@ -14,7 +14,7 @@
  }
  .sidebar{
   background: #010120;
-  color: rgb(240, 140, 9);
+  color: white;
   height: 100vh;
   width:  300px;
   box-shadow: #26263f;
@@ -35,28 +35,32 @@
  }
  .link{
   display: flex;
-  color: orange;
-  background:linear-gradient(to bottom right, rgb(18, 18, 94), rgb(73, 73, 6));
+  color: white;
+
+  background: repeating-linear-gradient(to bottom right, rgb(18, 18, 94), rgb(8, 8, 1));
+ 
+  
   background-color: transparent;
   padding: 10px 15px;
-  gap: 15px;
+  gap: 30px;
   transition:all 0.5s;
   border-radius: 30px;
   box-shadow: transparent;
 
  }
 .link:hover{
-  background: rgb(139, 55, 24) ;
+  background: rgb(19, 86, 131) ;
   color: black;
   transition: all 0.5s;
 }
 .active{
-  background: orangered ;
+  background: rgb(0, 26, 255) ;
   color: black;
   
   
 }
 .icon,.link_text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
 }
 .border_radius{

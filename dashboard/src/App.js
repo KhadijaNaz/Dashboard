@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/sidebar';
+import Categories from './pages/categories';
 import CreditCard from './pages/CreditCard';
 import DarkwebMonitoring from './pages/DarkwebMonitoring';
 import Dashboard from './pages/Dashboard.jsx';
@@ -19,7 +20,8 @@ const App = () => {
     <BrowserRouter>
     <Sidebar>
     <Routes>
-      <Route path="/"element={<Dashboard/>}/>
+      <Route path="/dashboard"element={<Dashboard/>}/>
+      <Route path="/categories"element= {<Categories/>}/>
         <Route path="/creditcard"element= {<CreditCard/>}/>
         <Route path="/passwords"element= {<Passwords/>}/>
         <Route path="/personalinfo"element= {<PersonalInfo/>}/>
