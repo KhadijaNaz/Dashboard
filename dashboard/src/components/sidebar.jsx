@@ -15,20 +15,16 @@ const Sidebar = ({children}) => {
 
     const menuItem=[
         {
-         path: "/",
+         path: "/dashboard",
          name: "Dashboard",
          icon: <FaTh/>
         },
         {
-            path:"/categories",
-            name:"Categories",
-            subRoutes: [
-        {
-            path:"/categories/passwords",
+            path:"/passwords",
             name:"Passwords",  
         },
        {
-        path:"/categories/personalinfo",
+        path:"/personalinfo",
         name:"Personal Info",
        },
        {
@@ -39,20 +35,18 @@ const Sidebar = ({children}) => {
         path:"/categories/creditcard",
         name:"Credit Card",
        },
-            ],
-        },
         {
             path: "/folders",
             name: "Folders",
 
            },
         {
-         path: "/passwords",
-         name: "Passwords",
+         path: "/databreachmonitoring",
+         name: "Data Breach",
         },
         {
-         path: "/personalinfo",
-         name: "Personal Info",
+         path: "/darkwebmonitoring",
+         name: "Darkweb",
         },
         ]
     return (
